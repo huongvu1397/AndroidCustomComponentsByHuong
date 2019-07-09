@@ -161,6 +161,11 @@
                     android:background="#fdffef"
                     android:text="@string/matilda" />
         </com.example.androidcustomcomponentsbyhuong.SidewaysLayout>
+
+        <com.example.androidcustomcomponentsbyhuong.RainbowTextView
+                android:layout_width="match_parent"
+                android:text="Huong da o day"
+                android:layout_height="wrap_content"/>
     </LinearLayout>
 
 </ScrollView>
