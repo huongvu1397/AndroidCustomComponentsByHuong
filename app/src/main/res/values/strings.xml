@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AndroidCustomComponentsByHuong</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="area">Area</string>
+    <string name="compute">Compute</string>
+    <string name="area_format">%1$d sq in</string>
+
+    <string name="welcome_to_my_library">Welcome to my library</string>
+    <string name="good_night_moon">Goodnight Moon</string>
+    <string name="green_eggs_and_ham">Green Eggs and Ham</string>
+    <string name="matilda">Matilda</string>
+</resources>

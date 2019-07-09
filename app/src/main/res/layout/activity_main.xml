@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:pizza="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+    <com.example.androidcustomcomponentsbyhuong.DateView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/width"/>
+
+            <com.example.androidcustomcomponentsbyhuong.LengthPicker
+                    android:id="@+id/width"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/height"/>
+
+            <com.example.androidcustomcomponentsbyhuong.LengthPicker
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/area"/>
+
+            <TextView
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"/>
+
+            <Button
+                    android:id="@+id/computer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compute"
+                    />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+        <com.example.androidcustomcomponentsbyhuong.SquareView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f00"/>
+    </LinearLayout>
+
+    <com.example.androidcustomcomponentsbyhuong.Pizza
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:padding="20dp"
+            pizza:num_wedges="6"
+            pizza:stroke_width="15"
+            pizza:color="#f0f"
+            />
+
+    <com.example.androidcustomcomponentsbyhuong.Pizza
+            android:layout_width="60dp"
+            android:layout_margin="20dp"
+            android:layout_height="60dp"
+            pizza:num_wedges="5"
+            pizza:stroke_width="5"
+            pizza:color="#0f0"
+            />
+
+    <com.example.androidcustomcomponentsbyhuong.PhotoSpiral
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/himeji"
+                android:layout_height="wrap_content"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ulm"
+                android:layout_height="wrap_content"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chiang_mai" />
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/petronas_twin_tower" />
+    </com.example.androidcustomcomponentsbyhuong.PhotoSpiral>
+        <com.example.androidcustomcomponentsbyhuong.SidewaysLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#f0f12b"
+                    android:background="#3ba249"
+                    android:text="@string/good_night_moon" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:textColor="#fff"
+                    android:background="#f4783a"
+                    android:textStyle="bold"
+                    android:text="@string/green_eggs_and_ham" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="30dp"
+                    android:textColor="#490000"
+                    android:background="#fdffef"
+                    android:text="@string/matilda" />
+        </com.example.androidcustomcomponentsbyhuong.SidewaysLayout>
+    </LinearLayout>
+
+</ScrollView>
